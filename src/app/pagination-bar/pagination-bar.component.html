@@ -1,0 +1,7 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item page-link">Previous</li>
+    <li class="page-item page-link" *ngFor="let bank of banks | paginate:5;index as pageNumber">{{pageNumber + 1}}</li>
+    <li class="page-item page-link">Next</li>
+  </ul>
+</nav>
